@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+            <TextView
+                android:id="@+id/subName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:background="@color/white"
+                android:text="Subject Name"
+                android:textColor="@color/main_app2"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/delete_subject"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/baseline_delete_24"/>
+
+        <TextView
+            android:layout_below="@id/subName"
+            android:id="@+id/credit_tv"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Credit Hours"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/main_app"
+            android:textSize="14sp"/>
+
+        <Spinner
+            android:layout_below="@id/subName"
+            android:id="@+id/credit_spinner"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/main_app"
+            android:textSize="14sp"
+            android:background="@drawable/editt_background"
+            android:padding="3dp"
+            android:entries="@array/cr"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/grade_tv"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Grade"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/main_app"
+            android:textSize="14sp"
+            android:layout_below="@id/credit_tv"/>
+
+        <Spinner
+            android:layout_alignParentEnd="true"
+            android:id="@+id/grade_spinner"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/editt_background"
+            android:padding="3dp"
+            android:textSize="14sp"
+            android:entries="@array/grade"
+            android:layout_below="@id/credit_tv"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

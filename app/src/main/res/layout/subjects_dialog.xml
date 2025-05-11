@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+    <EditText
+        android:id="@+id/subject_name"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/layout_corner"
+        android:hint="Enter Number of Subjects"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:backgroundTint="#D9F4DC"
+        android:paddingEnd="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_sub"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/subject_name"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Add"
+        android:backgroundTint="@color/main_app2"
+        android:background="@drawable/green_button_res"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
